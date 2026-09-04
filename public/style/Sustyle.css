@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+}
+
+.mybtn {
+    width: 160px;
+    padding: 5px 25px;
+    color: teal;
+    font-size: 1.2rem;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.mybtn:hover {
+    color: bisque;
+    background-color: teal;
+}
+
+.body {
+    height: 91vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(123, 116, 242);
+    background: linear-gradient(90deg, rgba(123, 116, 242, 1) 0%, rgba(183, 183, 213, 1) 35%, rgba(120, 198, 214, 1) 95%);
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 299px;
+    height: 378px;
+    margin: 0 10rem;
+    border: 2px solid rgb(1, 5, 8);
+    border-radius: 20px;
+}
+
+.main1-container {
+    background-color: teal;
+    position: relative;
+    bottom: 38%;
+    width: 295px;
+    height: 90px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.main1-container h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+#btn1 {
+    position: absolute;
+    top: 44%;
+    padding: 10px 41px;
+}
+
+#btn2 {
+    position: absolute;
+    top: 57%;
+    padding: 10px 65px;
+}
+
+#btn3 {
+    position: absolute;
+    top: 70%;
+    padding: 10px 65px;
+
+}
+
+:is(#btn1, #btn2, #btn3) {
+    text-decoration: none;
+    background-color: bisque;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: teal;
+}
+
+:is(#btn1, #btn2, #btn3) a {
+    text-decoration: none;
+    color: teal;
+    font-weight: 900;
+}
+
+:is(#btn1, #btn2, #btn3):hover {
+    background-color: rgb(209, 205, 205);
+}
+
+.login {
+    position: relative;
+    top: 0%;
+    transition-property: top;
+    transition-duration: 0.8s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 355px;
+    height: 384px;
+    margin: 0 10rem;
+    border: 2px solid rgb(1, 5, 8);
+    border-radius: 20px;
+}
+
+.main2-container {
+    background-color: teal;
+    position: relative;
+    bottom: 16%;
+    width: 351px;
+    height: 90px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 25px;
+}
+
+.main2-container h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+/* Student login form  */
+.sform {
+    position: relative;
+    width: 300px;
+    height: 168px;
+}
+
+.sform .sroll {
+    position: absolute;
+    top: -23%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.sform input[type="text"] {
+    position: absolute;
+    top: -22%;
+    left: 27%;
+    width: 212px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.sform .spass {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.sform input[type="password"] {
+    position: absolute;
+    top: 6%;
+    left: 36%;
+    width: 184px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.h4 {
+    position: absolute;
+    top: 27%;
+    font-size: 0.8rem;
+}
+
+.sform .newpass {
+    position: absolute;
+    top: 43%;
+    left: 0%;
+}
+
+.sform input[type="submit"] {
+    position: absolute;
+    top: 66%;
+    left: 22%;
+}
+
+.sform .acc {
+    position: absolute;
+    top: 110%;
+    left: 0%;
+}
+
+/* ----------------------------------------------- Student Register Form -------------------------------------- ----*/
+
+.rbody {
+    height: 91vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(123, 116, 242);
+    background: linear-gradient(90deg, rgba(123, 116, 242, 1) 0%, rgba(183, 183, 213, 1) 35%, rgba(120, 198, 214, 1) 95%);
+}
+
+.rbody .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 355px;
+    height: 580px;
+    margin: 0 10rem;
+    border: 2px solid rgb(1, 5, 8);
+    border-radius: 20px;
+}
+
+.rbody .main2-container {
+    background-color: teal;
+    position: relative;
+    bottom: 29%;
+    width: 351px;
+    height: 75px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 25px;
+}
+
+.rform {
+    position: relative;
+    width: 300px;
+    height: 167px;
+}
+
+.rform .rname {
+    position: absolute;
+    top: -79%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.rform .name {
+    position: absolute;
+    top: -79%;
+    left: 25%;
+    width: 234px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.rform .rroll {
+    position: absolute;
+    top: -55%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.rform .roll {
+    position: absolute;
+    top: -55%;
+    left: 27%;
+    width: 228px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.rform .rdept {
+    position: absolute;
+    top: -31%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.rform .dept {
+    position: absolute;
+    top: -31%;
+    left: 44%;
+    width: 176px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.rform .rcourse {
+    position: absolute;
+    top: -7%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.rform .course {
+    position: absolute;
+    top: -7%;
+    left: 27%;
+    width: 228px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.rform .rsemester {
+    position: absolute;
+    top: 18%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.rform .semester {
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    width: 218px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.rform .rdob {
+    position: absolute;
+    top: 43%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.rform .dob {
+    position: absolute;
+    top: 43%;
+    left: 17%;
+    width: 257px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.rform .rphno {
+    position: absolute;
+    top: 68%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.rform .phone {
+    position: absolute;
+    top: 68%;
+    left: 37%;
+    width: 198px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.rform .remail {
+    position: absolute;
+    top: 92%;
+    left: 0%;
+}
+
+.rform input[type="email"] {
+    position: absolute;
+    top: 92%;
+    left: 25%;
+    width: 233px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.rform .rpass {
+    position: absolute;
+    top: 114%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.rform .pass {
+    position: absolute;
+    top: 114%;
+    left: 37%;
+    width: 197px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.Vpass {
+    position: absolute;
+    top: 129%;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.rform .rcpass {
+    position: absolute;
+    top: 145%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.rform .cpass {
+    position: absolute;
+    top: 145%;
+    left: 33%;
+    width: 210px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.rform input[type="submit"] {
+    position: absolute;
+    top: 168%;
+    left: 22%;
+}
+
+/*--------------------------------------------- Student forgot password ----------------------------------------- */
+
+.resetbody {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(123, 116, 242);
+    background: linear-gradient(90deg, rgba(123, 116, 242, 1) 0%, rgba(183, 183, 213, 1) 35%, rgba(120, 198, 214, 1) 95%);
+}
+
+.resetbody .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 390px;
+    height: 360px;
+    margin: 0 10rem;
+    border: 2px solid rgb(1, 5, 8);
+    border-radius: 20px;
+}
+
+.resetbody .main2-container {
+    background-color: teal;
+    position: relative;
+    bottom: 14%;
+    width: 386px;
+    height: 90px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 25px;
+}
+
+.resetform {
+    position: relative;
+    width: 336px;
+    height: 167px;
+}
+
+.resetform .resetroll {
+    position: absolute;
+    top: -20%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.resetform .roll {
+    position: absolute;
+    top: -20%;
+    left: 23%;
+    width: 270px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.resetform .resetpass {
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.resetform .pass {
+    position: absolute;
+    top: 12%;
+    left: 45%;
+    width: 196px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.Rpass {
+    position: absolute;
+    top: 30%;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.resetform .resetcpass {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    font-size: 1.2rem;
+}
+
+.resetform .cpass {
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    width: 249px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.resetform input[type="submit"] {
+    position: absolute;
+    top: 80%;
+    left: 26%;
+}
+
+
+/* -------------------------------------------Main pages Student ---------------------------------------------- */
+
+.navbar-bg {
+    background-color: rgb(65, 65, 109);
+}
+

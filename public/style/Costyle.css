@@ -1,0 +1,971 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+}
+
+.mybtn {
+    width: 160px;
+    padding: 5px 25px;
+    color: teal;
+    font-size: 1.2rem;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.mybtn:hover {
+    color: bisque;
+    background-color: teal;
+}
+
+.body {
+    height: 91vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(123, 116, 242);
+    background: linear-gradient(90deg, rgba(123, 116, 242, 1) 0%, rgba(183, 183, 213, 1) 35%, rgba(120, 198, 214, 1) 95%);
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 299px;
+    height: 378px;
+    margin: 0 10rem;
+    border: 2px solid rgb(1, 5, 8);
+    border-radius: 20px;
+}
+
+.main1-container {
+    background-color: teal;
+    position: relative;
+    bottom: 38%;
+    width: 295px;
+    height: 90px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.main1-container h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+#btn1 {
+    position: absolute;
+    top: 44%;
+    padding: 10px 41px;
+}
+
+#btn2 {
+    position: absolute;
+    top: 57%;
+    padding: 10px 65px;
+}
+
+#btn3 {
+    position: absolute;
+    top: 70%;
+    padding: 10px 65px;
+
+}
+
+:is(#btn1, #btn2, #btn3) {
+    text-decoration: none;
+    background-color: bisque;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: teal;
+}
+
+:is(#btn1, #btn2, #btn3) a {
+    text-decoration: none;
+    color: teal;
+    font-weight: 900;
+}
+
+:is(#btn1, #btn2, #btn3):hover {
+    background-color: rgb(209, 205, 205);
+}
+
+.login {
+    position: relative;
+    top: 0%;
+    transition-property: top;
+    transition-duration: 0.8s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 355px;
+    height: 385px;
+    margin: 0 10rem;
+    border: 2px solid rgb(1, 5, 8);
+    border-radius: 20px;
+}
+
+.main2-container {
+    background-color: teal;
+    position: relative;
+    bottom: 17%;
+    width: 351px;
+    height: 90px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 25px;
+}
+
+.main2-container h2 {
+    color: white;
+    font-size: 1.7rem;
+}
+
+/*--------------------------------------------- Coordinator login form ------------------------------------------*/
+.cform {
+    position: relative;
+    width: 300px;
+    height: 161px;
+}
+
+.cform .cid {
+    position: absolute;
+    top: 13%;
+    left: 0%;
+}
+
+.cform input[type="text"] {
+    position: absolute;
+    top: 13%;
+    left: 43%;
+    width: 170px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+/* .cform .eid{
+    position: absolute;
+    top: 9%;
+    left: 0%; 
+}
+.cform input[type="email"]{
+    position: absolute;
+    top: 9%;
+    left: 26%;
+    width: 212px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.cform .pass{
+    position: absolute;
+    top: 37%;
+    left: 0%; 
+}
+.cform input[type="password"]{
+    position: absolute;
+    top: 37%;
+    left: 30%;
+    width: 200px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+} */
+.cform input[type="submit"] {
+    position: absolute;
+    top: 75%;
+    left: 24%;
+}
+
+/* -------------------------------------------Main pages ---------------------------------------------- */
+
+/* header part */
+
+.hbody {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+}
+
+.navbar-bg {
+    background-color: rgb(65, 65, 109);
+}
+
+.left {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 45%;
+    height: 50%;
+    margin: 17px 5px;
+}
+
+.left h3 {
+    font-size: 1.7rem;
+    padding: 18px 0;
+    color: #be3d31;
+    text-decoration: underline;
+}
+
+.left .homecontent {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.left h2 {
+    font-size: 1.7rem;
+    padding: 10px 0;
+    color: #be3d31;
+    text-decoration: underline;
+}
+
+.left .aboutcontent {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: black;
+}
+
+.right {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 45%;
+    height: 50%;
+    margin: 17px 5px;
+}
+
+.right #image {
+    width: 440px;
+    height: 315px;
+    margin: 9px 89px;
+}
+
+.right #image:hover {
+    box-shadow: 8px 8px 10px 5px rgb(66, 63, 63);
+}
+
+/* footer part */
+.footer {
+    width: 100%;
+    height: 76px;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    background-color: rgb(65, 65, 109);
+}
+
+.footer h4 {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.footer p {
+    color: #fff;
+}
+
+.icons {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+}
+
+.icons .fa {
+    padding: 10px;
+}
+
+/* ......................................addfac styling ........................................................*/
+
+.fformdiv {
+    position: relative;
+    height: 345px;
+    width: 700px;
+    margin: 9% 25%;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.fformdiv h2 {
+    color: #be3d31;
+    text-decoration: underline;
+    margin: 6px 0;
+    margin-bottom: 22px;
+}
+
+.fformdiv h2 {
+    color: #be3d31;
+    position: absolute;
+    left: 6%;
+    text-decoration: underline;
+}
+
+.fform .fid {
+    position: absolute;
+    top: 28%;
+    left: 6%;
+}
+
+.fform .id {
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    width: 25%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.fform .fname {
+    position: absolute;
+    top: 44%;
+    left: 6%;
+}
+
+.fform .name {
+    position: absolute;
+    top: 44%;
+    left: 16%;
+    width: 29%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.fform .fdob {
+    position: absolute;
+    top: 60%;
+    left: 6%;
+}
+
+.fform .dob {
+    position: absolute;
+    top: 60%;
+    left: 13%;
+    width: 32%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.fform .femail {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+}
+
+.fform .email {
+    position: absolute;
+    top: 28%;
+    left: 62%;
+    width: 31%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.fform .fphno {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+}
+
+.fform .phone {
+    position: absolute;
+    top: 44%;
+    left: 65%;
+    width: 28%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.fform .fdept {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+
+.fform .dept {
+    position: absolute;
+    top: 60%;
+    left: 66%;
+    width: 27%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.fform #btnPo1 {
+    position: absolute;
+    top: 78%;
+    left: 6%;
+}
+
+/*---------------------------------------- faculty details style --------------------------------------------*/
+
+.facDe {
+    position: relative;
+    margin-top: 35px;
+}
+
+.facDe h2 {
+    color: #be3d31;
+    text-decoration: underline;
+    margin: 6px 0;
+    margin-bottom: 22px;
+}
+
+.facform {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.facform .fid {
+    position: absolute;
+    left: 9%;
+    width: 12%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.facform #btnPo2 {
+    position: absolute;
+    left: 23%;
+}
+
+.facform .allDe {
+    position: absolute;
+    left: 31%;
+}
+
+.facform .allDe a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*............................................ student details style........................................ */
+
+.stuDe {
+    position: relative;
+    margin-top: 35px;
+}
+
+.stuDe h2 {
+    color: #be3d31;
+    text-decoration: underline;
+    margin: 6px 0;
+    margin-bottom: 22px;
+}
+.stuform {
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+
+.stuform #dept {
+    position: absolute;
+    left: 11%;
+}
+.stuform .dept {
+    position: absolute;
+    left: 21%;
+    width: 12%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.stuform #course {
+    position: absolute;
+    left: 34%;
+}
+.stuform .course {
+    position: absolute;
+    left: 40%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.stuform #sem {
+    position: absolute;
+    left: 49%;
+}
+.stuform .sem {
+    position: absolute;
+    left: 57%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.stuform .roll {
+    position: absolute;
+    left: 64%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.stuform #btnPo3 {
+    position: absolute;
+    left: 85%;
+}
+
+.stuform .allDe {
+    position: absolute;
+    left: 93%;
+}
+
+.stuform .allDe a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* .............................................hall styling ................................................*/
+
+.eformdiv {
+    position: relative;
+    margin-top: 27px;
+    font-weight: 600;
+}
+.eformdiv h2 {
+    color: #be3d31;
+    text-decoration: underline;
+    margin: 6px 0;
+    margin-bottom: 22px;
+}
+.deptPart{
+    position: relative;
+    top: 75px;
+    width: 80%;
+    height: 365px;
+    border: 2px solid black;
+    border-radius: 20px; 
+}
+.eh1 {
+    position: absolute;
+    height: 355px;
+    width: 400px;
+    top: 2%;
+    left: 1%;
+    /* border: 2px solid black; */
+    /* border-radius: 20px; */
+}
+.eh1form{
+    position: relative;
+    height: 350px;
+    padding: 10px 35px;
+}
+.eh1form .dept1{
+    position: absolute;
+    top: 33%;
+    left: 8%;
+}
+.eh1form .depteh1{
+    position: absolute;
+    top: 33%;
+    left: 34%;
+    width: 27%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.eh1form .sem1{
+    position: absolute;
+    top: 43%;
+    left: 8%;
+}
+.eh1form .semeh1{
+    position: absolute;
+    top: 43%;
+    left: 29%;
+    width: 32%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.eh1form .roll1{
+    position: absolute;
+    top: 53%;
+    left: 8%;
+}
+.eh1form #roll1{
+    position: absolute;
+    top: 62%;
+    left: 8%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.eh1form .roll2{
+    position: absolute;
+    top: 73%;
+    left: 8%;
+}
+.eh1form #roll2{
+    position: absolute;
+    top: 82%;
+    left: 8%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+#partition{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: rotate(90deg);
+    width: 35%;
+}
+
+.eh2 {
+    position: absolute;
+    height: 355px;
+    width: 400px;
+    top: 2%;
+    left: 54%;
+    /* border: 2px solid black; */
+    /* border-radius: 20px; */
+}
+.eh2form{
+    position: relative;
+    height: 350px;
+    padding: 10px 35px;
+}
+.eh2form .dept2{
+    position: absolute;
+    top: 33%;
+    left: 8%;
+}
+.eh2form .depteh2{
+    position: absolute;
+    top: 33%;
+    left: 34%;
+    width: 27%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.eh2form .sem2{
+    position: absolute;
+    top: 43%;
+    left: 8%;
+}
+.eh2form .semeh2{
+    position: absolute;
+    top: 43%;
+    left: 29%;
+    width: 32%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.eh2form .roll3{
+    position: absolute;
+    top: 53%;
+    left: 8%;
+}
+.eh2form #roll3{
+    position: absolute;
+    top: 62%;
+    left: 8%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.eh2form .roll4{
+    position: absolute;
+    top: 73%;
+    left: 8%;
+}
+.eh2form #roll4{
+    position: absolute;
+    top: 82%;
+    left: 8%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.eh3 .room{
+    position: absolute;
+    top: 13%;
+    left: 8%;
+    width: 12%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.eh3 .eseat{
+    position: absolute;
+    top: 14%;
+    left: 21%;
+}
+.eh3 .seat{
+    position: absolute;
+    top: 13%;
+    left: 29%;
+    width: 14%; 
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.eh3 .edate{
+    position: absolute;
+    top: 14%;
+    left: 44%;
+}
+.eh3 .date{
+    position: absolute;
+    top: 13%;
+    left: 53%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.eh3 .etime{
+    position: absolute;
+    top: 14%;
+    left: 68%;
+}
+.eh3 .time{
+    position: absolute;
+    top: 13%;
+    left: 77%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.eh3 .ename{
+    position: absolute;
+    top: 24%;
+    left: 1%;
+}
+.eh3 .name{
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    width: 17%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.eh3 .eassignfac{
+    position: absolute;
+    top: 24%;
+    left: 28%;
+}
+.eh3 .assignfac{
+    position: absolute;
+    top: 24%;
+    left: 41%;
+    width: 11%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.eh3 #btnPo4 {
+    position: absolute;
+    top: 22%;
+    left: 54%;
+}
+
+/* ------------------------------------------------allotment lists-------------------------------------------- */
+
+.allotDe {
+    position: relative;
+    margin-top: 35px;
+}
+
+.allotform {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.allotform .fid {
+    position: absolute;
+    left: 9%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.allotform .sroom {
+    position: absolute;
+    left: 11%;
+}
+.allotform .room {
+    position: absolute;
+    left: 19%;
+    width: 12%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.allotform .sdate {
+    position: absolute;
+    left: 32%;
+}
+.allotform .date {
+    position: absolute;
+    left: 41%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.allotform .stime {
+    position: absolute;
+    left: 55%;
+}
+.allotform .time {
+    position: absolute;
+    left: 64%;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+.allotform #btnPo5 {
+    position: absolute;
+    left: 74%;
+}
+
+.allotform .allDe {
+    position: absolute;
+    left: 82%;
+}
+
+.allotform .allDe a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.allotDe h2 {
+    color: #be3d31;
+    text-decoration: underline;
+    margin: 6px 0;
+    margin-bottom: 22px;
+}
+
+
+

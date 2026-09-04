@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Edit Student</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .editstu {
+      position: relative;
+      top: 100px;
+      height: 415px;
+      font-weight: 600;
+    }
+
+    .editstu #gobtn2 {
+      position: absolute;
+      top: 79%;
+      left: 5%;
+    }
+
+    .editstu #gobtn2 a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .rform {
+      position: relative;
+      top: 40px;
+      left: 22%;
+      height: 340px;
+      width: 660px;
+      padding: 20px 30px;
+      border: 2px solid black;
+      border-radius: 20px;
+    }
+
+    .rform .rroll {
+      position: absolute;
+      top: 28%;
+      left: 5%;
+    }
+
+    .rform .roll {
+      position: absolute;
+      top: 28%;
+      left: 15%;
+      font-size: 1rem;
+      padding: 0 10px;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      outline: none;
+    }
+
+    .rform .rname {
+      position: absolute;
+      top: 40%;
+      left: 5%;
+    }
+
+    .rform .name {
+      position: absolute;
+      top: 40%;
+      left: 14%;
+      width: 32%;
+      font-size: 1rem;
+      padding: 0 10px;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      outline: none;
+    }
+
+    .rform .rdept {
+      position: absolute;
+      top: 54%;
+      left: 5%;
+    }
+
+    .rform .dept {
+      position: absolute;
+      top: 54%;
+      left: 21%;
+      width: 25%;
+      font-size: 1rem;
+      padding: 0 10px;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      outline: none;
+    }
+
+    .rform .rcourse {
+      position: absolute;
+      top: 28%;
+      left: 55%;
+    }
+
+    .rform .course {
+      position: absolute;
+      top: 28%;
+      left: 66%;
+      width: 28%;
+      font-size: 1rem;
+      padding: 0 10px;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      outline: none;
+    }
+
+    .rform .rsemester {
+      position: absolute;
+      top: 40%;
+      left: 55%;
+    }
+
+    .rform .semester {
+      position: absolute;
+      top: 40%;
+      left: 68%;
+      width: 26%;
+      font-size: 1rem;
+      padding: 0 10px;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      outline: none;
+    }
+
+    .rform .rdob {
+      position: absolute;
+      top: 54%;
+      left: 55%;
+    }
+
+    .rform .dob {
+      position: absolute;
+      top: 54%;
+      left: 62%;
+      width: 32%;
+      font-size: 1rem;
+      padding: 0 10px;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      outline: none;
+    }
+
+    .rform .rphno {
+      position: absolute;
+      top: 67%;
+      left: 5%;
+    }
+
+    .rform .phone {
+      position: absolute;
+      top: 67%;
+      left: 18%;
+      width: 28%;
+      font-size: 1rem;
+      padding: 0 10px;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      outline: none;
+    }
+
+    .rform .remail {
+      position: absolute;
+      top: 67%;
+      left: 55%;
+    }
+
+    .rform .email {
+      position: absolute;
+      top: 67%;
+      left: 66%;
+      width: 28%;
+      font-size: 1rem;
+      padding: 0 10px;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      outline: none;
+    }
+
+    .rform .editbtn2 {
+      position: absolute;
+      top: 79%;
+      left: 79%;
+    }
+
+    h2 {
+      color: #be3d31;
+      text-decoration: underline;
+      margin: 6px 0;
+      margin-bottom: 22px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container editstu">
+
+    <form action="/editStu" class="rform" method="POST">
+      <button class="btn btn-danger" id="gobtn2"><a href="/stuDetails">Go Back</a></button>
+      <h2>Edit Student</h2>
+      <label class="rroll">Roll No : </label>
+      <input type="text" class="roll" name="rroll" value="{{roll}}" placeholder="Enter Roll No" required
+        autocomplete="off">
+      <label class="rname">Name : </label>
+      <input type="text" class="name" name="rname" value="{{name}}" placeholder="Enter Your Name" required
+        autocomplete="off">
+      <label class="rdept">Department : </label>
+      <select class="dept" name="rdept" required>
+        <option></option>
+        <option>Civil</option>
+        <option>Mechanical</option>
+        <option>Electonics</option>
+        <option>Electicals</option>
+        <option>Computer Science</option>
+        <option>Computer Application</option>
+        <option>Business Administration</option>
+      </select>
+      <label class="rcourse">Course : </label>
+      <select class="course" name="rcourse" required>
+        <option></option>
+        <option>Btech</option>
+        <option>Mtech</option>
+        <option>BCA</option>
+        <option>MCA</option>
+        <option>BBA</option>
+        <option>MBA</option>
+      </select>
+      <label class="rsemester">Semester : </label>
+      <select class="semester" name="rsemester" required>
+        <option></option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+      </select>
+      <label class="rdob">DOB : </label>
+      <input type="date" class="dob" name="rdob" value="{{dob}}" placeholder="Enter Your DOB" required
+        autocomplete="off">
+      <label class="rphno">Phone-No : </label>
+      <input type="text" class="phone" name="rphno" value="{{phone}}" placeholder="Enter Your Ph-No" required
+        autocomplete="off">
+      <label class="remail">Email Id : </label>
+      <input type="email" name="remail" class="email" value="{{email}}" placeholder="Enter Your Email" readonly required
+        autocomplete="off">
+
+      <input type="submit" value="Edit Student" class="btn btn-danger editbtn2">
+      {{!-- <div class="racc"><label>Already Have an Account? | </label><a href="/Sulogin">Login</a></div> --}}
+    </form>
+
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

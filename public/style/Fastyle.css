@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+}
+.mybtn{
+    width: 160px;
+    padding: 5px 25px;
+    color: teal;
+    font-size: 1.2rem;
+    background-color: bisque;
+    cursor: pointer;
+}
+.mybtn:hover{
+    color: bisque;
+    background-color: teal;
+}
+.body{
+    height: 91vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: rgb(123,116,242);
+    background: linear-gradient(90deg, rgba(123,116,242,1) 0%, rgba(183,183,213,1) 35%, rgba(120,198,214,1) 95%); 
+    box-sizing: border-box; 
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 299px;
+    height: 378px;
+    margin: 0 10rem;
+    border: 2px solid rgb(1, 5, 8);
+    border-radius: 20px;
+}
+.main1-container{
+    background-color: teal;
+    position: relative;
+    bottom: 38%;
+    width: 295px;
+    height: 90px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 15px;
+    text-align: center;
+}
+.main1-container h2{
+    color: white;
+    font-size: 2rem;
+}
+#btn1{
+    position: absolute;
+    top: 44%;
+    padding: 10px 41px;
+}
+#btn2{
+    position: absolute;
+    top: 57%;
+    padding: 10px 65px;
+}
+#btn3{
+    position: absolute;
+    top: 70%;
+    padding: 10px 65px;
+
+}
+:is(#btn1 , #btn2, #btn3){
+    text-decoration: none;
+    background-color: bisque;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: teal;
+}
+:is(#btn1 , #btn2, #btn3) a{
+    text-decoration: none;
+    color: teal;
+    font-weight: 900;
+}
+:is(#btn1 , #btn2, #btn3):hover{
+    background-color: rgb(209, 205, 205);
+}
+.login{
+    position: relative;
+    top: 0%;
+    transition-property: top;
+    transition-duration: 0.8s;
+    transition-timing-function: linear;
+    transition-delay: 1s; 
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 355px;
+    height: 385px;
+    margin: 0 10rem;
+    border: 2px solid rgb(1, 5, 8);
+    border-radius: 20px;
+}
+.main2-container{
+   background-color: teal;
+   position: relative;
+   bottom: 16%;
+    width: 351px;
+    height: 90px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 25px;
+}
+.main2-container h2{
+    color: white;
+    font-size: 2rem;
+}
+
+/* -------------------------------------------Faculty login form -------------------------------------------*/
+.fform{
+    position: relative;
+    width: 300px;
+    height: 168px;
+} 
+.fform .eid{
+    position: absolute;
+    top: 18%;
+    left: 0%; 
+}
+.fform input[type="email"]{
+    position: absolute;
+    top: 17%;
+    left: 26%;
+    width: 218px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.fform .fid{
+    position: absolute;
+    top: -14%;
+    left: 0%;  
+}
+.fform input[type="text"]{
+    position: absolute;
+    top: -16%;
+    left: 30%;
+    width: 205px;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.fform input[type="submit"]{
+    position: absolute;
+    top: 70%;
+    left: 24%;
+}
+
+/* -------------------------------------------Main pages Faculty ------------------------------------------ */
+
+.navbar-bg {
+    background-color: rgb(65, 65, 109);
+}
